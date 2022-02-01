@@ -10,10 +10,10 @@ namespace JUnitTesting
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter 1.to calculate the minimum number of notes \nEnter 2.to print temperature value \nEnter 3.to print Square Root \nEnter 4.to print day of week \n");
-                    
+            Console.WriteLine("Enter 1.to calculate the minimum number of notes \nEnter 2.to print temperature value \nEnter 3.to print Square Root \nEnter 4.to print day of week \nEnter 5.to print binary number \n");
 
-                bool flag = true;
+
+            bool flag = true;
             while (flag)
             {
                 int check = Convert.ToInt32(Console.ReadLine());
@@ -40,8 +40,13 @@ namespace JUnitTesting
                         day.Week();
                         break;
 
+                    case 5:
+                        BinaryConversion binary = new BinaryConversion();
+                        binary.Conversion();
+                        break;
+
                 }
             }
-        }       
+        }
     }
 }

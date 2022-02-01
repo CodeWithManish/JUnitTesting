@@ -10,7 +10,7 @@ namespace JUnitTesting
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter 1.to calculate the minimum number of notes \nEnter 2.to print temperature value \n");
+            Console.WriteLine("Enter 1.to calculate the minimum number of notes \nEnter 2.to print temperature value \nEnter 3.to print Square Root");
                     
 
                 bool flag = true;
@@ -28,6 +28,11 @@ namespace JUnitTesting
                     case 2:
                         TemperatureConversion temp = new TemperatureConversion();
                         temp.Conversion();
+                        break;
+
+                    case 3:
+                        SquareRoot sqrt = new SquareRoot();
+                        sqrt.Root(327, 0.00001);
                         break;
 
                 }

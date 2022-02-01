@@ -10,7 +10,7 @@ namespace JUnitTesting
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter 1.to calculate the minimum number of notes \n");
+            Console.WriteLine("Enter 1.to calculate the minimum number of notes \nEnter 2.to print temperature value \n");
                     
 
                 bool flag = true;
@@ -23,6 +23,11 @@ namespace JUnitTesting
                     case 1:
                         VendingMachine machine = new VendingMachine();
                         machine.Calculate();
+                        break;
+
+                    case 2:
+                        TemperatureConversion temp = new TemperatureConversion();
+                        temp.Conversion();
                         break;
 
                 }

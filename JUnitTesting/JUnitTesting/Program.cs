@@ -10,7 +10,8 @@ namespace JUnitTesting
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter 1.to calculate the minimum number of notes \nEnter 2.to print temperature value \nEnter 3.to print Square Root \nEnter 4.to print day of week \nEnter 5.to print binary number \n");
+            Console.WriteLine("Enter 1.to calculate the minimum number of notes \nEnter 2.to print temperature value \nEnter 3.to print Square Root \n" +
+                "Enter 4.to print day of week \nEnter 5.to print binary number \nEnter 6. to print MonthyPayment \n");
 
 
             bool flag = true;
@@ -44,6 +45,12 @@ namespace JUnitTesting
                         BinaryConversion binary = new BinaryConversion();
                         binary.Conversion();
                         break;
+
+                    case 6:
+                        MonthlyPayment month=new MonthlyPayment();
+                        month.CalMonthlyPayment();
+                        break;
+
 
                 }
             }
